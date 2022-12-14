@@ -1,0 +1,96 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "react-app/jest",
+        "standard",
+        "plugin:import/typescript",
+        "plugin:tailwindcss/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "tailwindcss"
+    ],
+    "rules": {
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "@typescript-eslint/quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "tailwindcss/classnames-order": "warn",
+        "tailwindcss/enforces-negative-arbitrary-values": "warn",
+        "tailwindcss/enforces-shorthand": "warn",
+        "tailwindcss/migration-from-tailwind-2": "off",
+        "tailwindcss/no-arbitrary-value": "off",
+        "tailwindcss/no-custom-classname": [
+            "warn",
+            {
+                "whitelist": [
+                    "head",
+                    "shape10",
+                    "video-element"
+                ]
+            }
+        ],
+        "tailwindcss/no-contradicting-classname": "error",
+        "react/jsx-uses-react": [
+            "off"
+        ],
+        "react/react-in-jsx-scope": [
+            "off"
+        ],
+        "react/jsx-props-no-spreading": [
+            "warn"
+        ],
+        "no-shadow": [
+            "off"
+        ],
+        "camelcase": [
+            "error"
+        ],
+        "no-unused-expressions": [
+            "error"
+        ],
+        "no-unused-vars": [
+            "error"
+        ],
+        "no-trailing-spaces": [
+            "error"
+        ],
+        "no-unused-labels": [
+            "error"
+        ],
+        "no-extra-parens": [
+            "error"
+        ],
+        "no-extra-semi": [
+            "error"
+        ],
+        "no-extra-boolean-cast": [
+            "error"
+        ]
+    }
+}
